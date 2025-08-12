@@ -18,18 +18,71 @@
       font-family: 'Inter', sans-serif;
   }
 
-  .wpp-fixed{
+  /* Splash Screen - tela cheia */
+   #splash {
     position: fixed;
-    z-index: 100;
-    right: 1vw;
-    bottom: 4vh;
-    width: 70px;
-    transition: .3s;
-}
+    inset: 0;
+    background-color: #1b2c40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    z-index: 9999;
+    transition: opacity 0.6s ease;
+  }
 
-.wpp-fixed:hover{
-    transform: scale(1.05) !important;
-}
+  /* Logo dentro do splash */
+  #splash .logo {
+    width: 400px;
+    height: auto;
+    user-select: none;
+  }
+
+  /* Spinner espiral */
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid transparent;
+    border-top: 4px solid #ffffff; /* cor amarelo ouro */
+    border-left: 4px solid #ffffff;
+    border-radius: 50%;
+    animation: spin 1.2s linear infinite;
+    filter: drop-shadow(0 0 3px #ffffff);
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+  }
+
+  /* Splash escondido (opacity 0 + pointer-events none) */
+  #splash.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* Conteúdo do site */
+  #main-content {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 2rem;
+  }
+  #main-content.visible {
+    opacity: 1;
+  }
+  .wpp-fixed {
+      position: fixed;
+      z-index: 100;
+      right: 1vw;
+      bottom: 4vh;
+      width: 70px;
+      transition: .3s;
+  }
+
+  .wpp-fixed:hover {
+      transform: scale(1.05) !important;
+  }
 
 
   .hero-bg {
@@ -95,9 +148,11 @@
   }
 
 
-  h1, h2, h3{
-    font-family: 'Fonte2', 'inter';
-    font-weight: 700;
+  h1,
+  h2,
+  h3 {
+      font-family: 'Fonte2', 'inter';
+      font-weight: 700;
   }
 
   .bg-custom-blue {
@@ -148,7 +203,7 @@
       /* Tamanho da fonte normal */
       padding: 0.5rem 1rem;
       /* Equivalente a py-2 px-4 */
-      
+
   }
 
   .faq-item .faq-answer {

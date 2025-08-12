@@ -64,6 +64,11 @@
         </div>
     </header>
 
+   <div id="splash">
+    <img src="./images/logo3.png" alt="Logo" class="logo" />
+    <div class="spinner"></div>
+  </div>
+
 
     <a href="https://wa.me/5532999392937" target="_blank"><img class="wpp-fixed" src="./images/wpp-fixed.png"
             alt="whatsapp link"></a>
@@ -164,33 +169,33 @@
 
     <!-- Seção de Resultados -->
     <section id="resultados" class="py-20 md:py-15 bg-gray-900 text-white relative">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold mb-4 text-custom-gold">Nossos Resultados e Casos de Sucesso</h2>
-            <p class="text-lg text-gray-300 mb-12">
-                Demonstramos nossa excelência através de um histórico comprovado de sucesso para nossos clientes.
-            </p>
-            <div style="margin-top: 50px;" class="grid grid-cols-1 md:grid-cols-3 gap-8 -mt-20 relative z-10">
-                <!-- Caixa de Resultado 1 -->
-                <div
-                    class="bg-gray-800 p-8 rounded-lg shadow-lg transform transition-transform duration-300 card-effect">
-                    <h3 class="text-5xl font-extrabold text-custom-gold mb-2">99%</h3>
-                    <p class="text-xl font-semibold mb-4 text-gray-200">Casos de Sucesso</p>
-                </div>
-                <!-- Caixa de Resultado 2 -->
-                <div
-                    class="bg-gray-800 p-8 rounded-lg shadow-lg transform transition-transform duration-300 card-effect">
-                    <h3 class="text-5xl font-extrabold text-custom-gold mb-2">+10 Anos</h3>
-                    <p class="text-xl font-semibold mb-4 text-gray-200">de Experiência</p>
-                </div>
-                <!-- Caixa de Resultado 3 -->
-                <div
-                    class="bg-gray-800 p-8 rounded-lg shadow-lg transform transition-transform duration-300 card-effect">
-                    <h3 class="text-5xl font-extrabold text-custom-gold mb-2">+500</h3>
-                    <p class="text-xl font-semibold mb-4 text-gray-200">Clientes Satisfeitos</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold mb-4 text-custom-gold">Nossos Resultados e Casos de Sucesso</h2>
+    <p class="text-lg text-gray-300 mb-12">
+      Demonstramos nossa excelência através de um histórico comprovado de sucesso para nossos clientes.
+    </p>
+    <div style="margin-top: 50px;" class="grid grid-cols-1 md:grid-cols-3 gap-8 -mt-20 relative z-10">
+      <!-- Caixa de Resultado 1 -->
+      <div
+        class="bg-gray-800 p-8 rounded-lg shadow-lg transform transition-transform duration-300 card-effect">
+        <h3 class="text-5xl font-extrabold text-custom-gold mb-2" data-target="99%">99%</h3>
+        <p class="text-xl font-semibold mb-4 text-gray-200">Casos de Sucesso</p>
+      </div>
+      <!-- Caixa de Resultado 2 -->
+      <div
+        class="bg-gray-800 p-8 rounded-lg shadow-lg transform transition-transform duration-300 card-effect">
+        <h3 class="text-5xl font-extrabold text-custom-gold mb-2" data-target="+10 Anos">+10 Anos</h3>
+        <p class="text-xl font-semibold mb-4 text-gray-200">de Experiência</p>
+      </div>
+      <!-- Caixa de Resultado 3 -->
+      <div
+        class="bg-gray-800 p-8 rounded-lg shadow-lg transform transition-transform duration-300 card-effect">
+        <h3 class="text-5xl font-extrabold text-custom-gold mb-2" data-target="+500">+500</h3>
+        <p class="text-xl font-semibold mb-4 text-gray-200">Clientes Satisfeitos</p>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Seção de História, Missão, Visão e Valores -->
     <section id="historia" class="py-20 md:py-32 bg-gray-100 text-gray-800 relative">
@@ -485,28 +490,8 @@
     </footer>
 
     <!-- Scripts para interatividade (se necessário) -->
-    <script>
-        // menu bg
-        const btn = document.getElementById('menu-btn');
-        const menu = document.getElementById('menu');
-
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-
-
-        // Função para alternar a visibilidade das respostas da FAQ
-        function toggleFaq(item) {
-            item.classList.toggle('active');
-        }
-
-        // Exemplo de script para o mapa, caso o iframe precise de alguma interação
-        const mapIframe = document.querySelector('iframe');
-        if (mapIframe) {
-            mapIframe.addEventListener('load', () => {
-                console.log('Mapa carregado.');
-            });
-        }
+    <script src="script.js">
+      
     </script>
 </body>
 
