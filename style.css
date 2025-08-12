@@ -1,0 +1,168 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+  @font-face {
+      font-family: 'Fonte1';
+      src: url('/font/Fonte (1).otf') format('opentype');
+  }
+
+  @font-face {
+      font-family: 'Fonte2';
+      src: url('/font/Fonte (2).otf') format('opentype');
+  }
+
+  html {
+      scroll-behavior: smooth;
+  }
+
+  body {
+      font-family: 'Inter', sans-serif;
+  }
+
+  .wpp-fixed{
+    position: fixed;
+    z-index: 100;
+    right: 1vw;
+    bottom: 4vh;
+    width: 70px;
+    transition: .3s;
+}
+
+.wpp-fixed:hover{
+    transform: scale(1.05) !important;
+}
+
+
+  .hero-bg {
+      background-image: url('images/2.png');
+      background-size: cover;
+      background-position: center;
+  }
+
+  .avatar-content {
+      position: absolute;
+      bottom: 0;
+      right: 50px;
+      width: 50%;
+
+      display: flex;
+      align-items: end;
+      justify-content: end;
+  }
+
+  .avatar-content>img {
+      width: 70%;
+      max-height: 900px;
+      object-fit: cover;
+  }
+
+
+  .card-effect:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  .text-gradient {
+      background-image: linear-gradient(45deg, #1b2c40, #d3c3a1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+
+  .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      /* 16:9 Aspect Ratio */
+      height: 0;
+  }
+
+  .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+
+  /* Efeito de Parallax */
+  .parallax-section {
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+  }
+
+  .parallax-1 {
+      background-image: url('https://placehold.co/1920x500/001f3f/FFD700?text=Parallax+Section');
+  }
+
+
+  h1, h2, h3{
+    font-family: 'Fonte2', 'inter';
+    font-weight: 700;
+  }
+
+  .bg-custom-blue {
+      background-color: #1b2c40;
+  }
+
+  .text-custom-gold {
+      color: #d3c3a1
+  }
+
+  .bg-custom-gold {
+      color: #d3c3a1;
+  }
+
+  .btn-primary {
+      /* Cores solicitadas */
+      background-color: #d3c3a1;
+      color: #1b2c40;
+
+      /* Estilos do Tailwind convertidos */
+      display: inline-block;
+      /* Garante que o padding funcione corretamente */
+      padding: 0.75rem 2rem;
+      /* Equivalente a py-3 px-8 do seu outro botão */
+      font-weight: 700;
+      /* font-bold */
+      font-size: 1.125rem;
+      /* text-lg */
+      border-radius: 9999px;
+      /* rounded-full */
+      text-decoration: none;
+      /* Remove o sublinhado padrão de links */
+      text-align: center;
+
+      /* Efeito de transição suave */
+      transition: background-color 0.3s ease-in-out;
+  }
+
+  /* Efeito de hover que escurece o fundo */
+  .btn-primary:hover {
+      background-color: #c5b596;
+      /* Um tom mais escuro de #d3c3a1 */
+  }
+
+  /* Se precisar de um botão menor, como o do menu */
+  .btn-primary.btn-small {
+      font-size: 1rem;
+      /* Tamanho da fonte normal */
+      padding: 0.5rem 1rem;
+      /* Equivalente a py-2 px-4 */
+      
+  }
+
+  .faq-item .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+  }
+
+  .faq-item.active .faq-answer {
+      max-height: 200px;
+      /* Aumentar se o conteúdo for maior */
+      transition: max-height 0.3s ease-in;
+  }
+
+  .faq-item.active .faq-toggle-icon {
+      transform: rotate(180deg);
+  }
