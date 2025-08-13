@@ -92,3 +92,53 @@ window.addEventListener('load', () => {
       setTimeout(hideSplash, minSplashTime - elapsed);
     }
   });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Ensure GSAP and ScrollTrigger are loaded
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Hide splash screen after 1 second and trigger hero animations
+    setTimeout(() => {
+        const splash = document.getElementById("splash");
+        if (splash) {
+            gsap.to(splash, {
+                opacity: 0,
+                duration: 0.5,
+                ease: "power2.out",
+                onComplete: () => {
+                    splash.style.display = "none";
+                    animateHeroSection();
+                }
+            });
+        } else {
+            animateHeroSection();
+        }
+    }, 1000);
+
+    function animateHeroSection() {
+        // Select text container
+        const textContainer = document.querySelector("#hero .md\\:w-\\[700px\\]");
+
+        // Animate text container sliding in from left with fade
+        gsap.fromTo(
+            textContainer,
+            { x: -150, opacity: 0 }, // Start position: offset left
+            { x: 0, opacity: 1, duration: 1.2, ease: "power3.out", delay: 0.2 }
+        );
+
+        // Animate avatar image sliding in from right with fade
+        gsap.fromTo(
+            ".avatar-content img",
+            { x: 150, opacity: 0 }, // Start position: offset right
+            { x: 0, opacity: 1, duration: 1.2, ease: "power3.out", delay: 0.4 }
+        );
+
+        // Animate background overlay fading in
+        gsap.fromTo(
+            "#hero .bg-black",
+            { opacity: 0 },
+            { opacity: 0.5, duration: 1.5, ease: "power2.out" }
+        );
+    }
+});
