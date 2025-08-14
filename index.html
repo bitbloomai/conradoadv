@@ -378,45 +378,54 @@
 
 
     <!-- Seção de Contato -->
-    <section id="contato" class="py-20 md:py-32 bg-gray-900 text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold mb-4 text-custom-gold">Entre em Contato Conosco</h2>
-            <p class="text-lg text-gray-300 mb-12">
-                Estamos prontos para ajudá-lo com suas necessidades jurídicas imobiliárias. Preencha o formulário ou use
-                os contatos abaixo.
-            </p>
-            <div class="flex flex-col md:flex-row items-center justify-center gap-12">
-                <!-- Formulário de Contato -->
-                <div class="w-full md:w-1/2 bg-gray-800 p-8 rounded-lg shadow-lg">
-                    <form action="#" method="POST">
-                        <div class="mb-4">
-                            <input type="text" id="nome" name="nome" placeholder="Seu Nome"
-                                class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-custom-gold"
-                                required>
-                        </div>
-                        <div class="mb-4">
-                            <input type="email" id="email" name="email" placeholder="Seu E-mail"
-                                class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-custom-gold"
-                                required>
-                        </div>
-                        <div class="mb-4">
-                            <input type="tel" id="telefone" name="telefone" placeholder="Seu Telefone"
-                                class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-custom-gold"
-                                required>
-                        </div>
-                        <div class="mb-4">
-                            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Sua Mensagem"
-                                class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-custom-gold"
-                                required></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary w-full">
-                            Enviar Mensagem
-                        </button>
-                    </form>
+   <section id="contato" class="py-20 md:py-32 bg-gray-900 text-white">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold mb-4 text-custom-gold">Entre em Contato Conosco</h2>
+        <p class="text-lg text-gray-300 mb-12">
+            Estamos prontos para ajudá-lo com suas necessidades jurídicas imobiliárias. Clique no botão abaixo para nos enviar uma mensagem.
+        </p>
+        <div class="flex justify-center">
+            <button id="openModalBtn" class="btn-primary">
+                Entre em Contato Conosco
+            </button>
+        </div>
+
+        <!-- Modal -->
+        <div id="contactModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-lg">
+                <div class="flex justify-end">
+                    <button id="closeModalBtn" class="text-gray-300 hover:text-white text-2xl">&times;</button>
                 </div>
-                <!-- Botões para redes sociais e contato direto -->
+                <h3 class="text-2xl font-bold mb-6 text-custom-gold">Formulário de Contato</h3>
+                <form action="#" method="POST">
+                    <div class="mb-4">
+                        <input type="text" id="nome" name="nome" placeholder="Seu Nome"
+                            class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-custom-gold"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" id="email" name="email" placeholder="Seu E-mail"
+                            class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-custom-gold"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <input type="tel" id="telefone" name="telefone" placeholder="Seu Telefone"
+                            class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-custom-gold"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Sua Mensagem"
+                            class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-custom-gold"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full">
+                        Enviar Mensagem
+                    </button>
+                </form>
             </div>
-    </section>
+        </div>
+    </div>
+</section>
 
     <!-- NOVA SEÇÃO: FAQ - Perguntas Frequentes -->
     <section id="faq" class="py-20 md:py-32 bg-gray-100 text-gray-800">
@@ -612,25 +621,6 @@
                 <div class="faq-item bg-white p-6 rounded-lg shadow-lg mb-4 cursor-pointer transition-all duration-300"
                     onclick="toggleFaq(this)">
                     <div class="flex justify-between items-center">
-                        <h3 class="text-lg font-semibold text-custom-blue">O escritório atende apenas na área
-                            imobiliária?</h3>
-                        <svg class="w-6 h-6 text-custom-gold faq-toggle-icon transition-transform duration-300"
-                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="faq-answer text-gray-600">
-                        <p class="pt-4">
-                            Embora nossa principal especialidade seja o direito imobiliário, nossa equipe também possui
-                            expertise em outras áreas do direito, como empresarial, criminal e trabalhista, para
-                            oferecer um suporte jurídico abrangente.
-                        </p>
-                    </div>
-                </div>
-                <div class="faq-item bg-white p-6 rounded-lg shadow-lg mb-4 cursor-pointer transition-all duration-300"
-                    onclick="toggleFaq(this)">
-                    <div class="flex justify-between items-center">
                         <h3 class="text-lg font-semibold text-custom-blue">Quais documentos preciso para uma consulta?
                         </h3>
                         <svg class="w-6 h-6 text-custom-gold faq-toggle-icon transition-transform duration-300"
@@ -672,7 +662,7 @@
     <!-- Footer - NOVO CÓDIGO -->
     <footer class="bg-gray-900 text-gray-400 py-12 md:py-20 relative overflow-hidden">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
                 <!-- Coluna 1: Logo e Descrição -->
                 <div class="flex flex-col items-center md:items-start space-y-4">
                     <a href="#"><img src="./images/logo.png" alt="Logo do Escritório" width="200px" class="mb-4"></a>
@@ -682,7 +672,7 @@
                     </p>
                 </div>
                 <!-- Coluna 2: Áreas de Atuação -->
-                <div>
+                <!-- <div>
                     <h3 class="text-xl font-bold text-custom-gold mb-4">Áreas de Atuação</h3>
                     <ul class="space-y-2">
                         <li><a href="#" class="hover:text-custom-gold transition-colors duration-300">Advocacia
@@ -696,7 +686,7 @@
                         <li><a href="#" class="hover:text-custom-gold transition-colors duration-300">Advocacia
                                 Trabalhista</a></li>
                     </ul>
-                </div>
+                </div> -->
                 <!-- Coluna 3: Contato -->
                 <div>
                     <h3 class="text-xl font-bold text-custom-gold mb-4">Contato</h3>
