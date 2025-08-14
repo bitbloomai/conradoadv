@@ -47,7 +47,8 @@
             </div>
 
             <!-- Botão contato -->
-            <a href="#contato" class="btn-primary btn-small hidden md:inline-block">Entre em Contato</a>
+            <a href="https://wa.me/5532999392937?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta."
+                target="_blank" class="btn-primary btn-small hidden md:inline-block">Entre em Contato</a>
 
             <!-- Botão hamburger mobile -->
             <button id="menu-btn" class="md:hidden focus:outline-none">
@@ -77,7 +78,8 @@
                 class="block py-2 border-gray-700 hover:text-custom-gold transition-colors duration-300">Contato</a>
 
             <!-- Botão contato mobile -->
-            <a href="#contato" class="btn-primary btn-small mt-4 block text-center">Entre em Contato</a>
+            <a href="https://wa.me/5532999392937?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta."
+                target="_blank" class="btn-primary btn-small mt-4 block text-center">Entre em Contato</a>
         </div>
     </header>
 
@@ -102,10 +104,12 @@
                 <h1 class="text-4xl md:text-6xl leading-tight mb-4 animate-fade-in-up">
                     <span class="text-custom-gold">Seu futuro imobiliário</span> garantido por especialistas.
                 </h1>
-                <p class="text-xl md:text-2xl mb-6">
-                    Assessoria jurídica completa para transações imobiliárias, garantindo segurança e tranquilidade.
+                <p class="text-[1.2rem] md:text-2xl mb-6">
+                    Assessoria completa para regularização do seu imóvel e transações imobiliárias, garantindo segurança
+                    e tranquilidade.
                 </p>
-                <a href="#contato" class="btn-primary">Agende uma Consulta</a>
+                <a href="https://wa.me/5532999392937?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta."
+                    target="_blank" class="btn-primary">Agende uma Consulta</a>
             </div>
 
             <!-- Avatar -->
@@ -192,17 +196,17 @@
             <p class="text-lg text-gray-300 mb-12">
                 Demonstramos nossa excelência através de um histórico comprovado de sucesso para nossos clientes.
             </p>
-            <div style="margin-top: 50px;" class="grid grid-cols-1 md:grid-cols-3 gap-8 -mt-20 relative z-10">
+            <div style="margin-top: 50px;" class="grid grid-cols-1 md:grid-cols-2 gap-8 -mt-20 relative z-10">
                 <!-- Caixa de Resultado 1 -->
-                <div
+                <!-- <div
                     class="bg-gray-800 p-8 rounded-lg shadow-lg transform transition-transform duration-300 card-effect">
                     <h3 class="text-5xl font-extrabold text-custom-gold mb-2" data-target="99%">99%</h3>
                     <p class="text-xl font-semibold mb-4 text-gray-200">Casos de Sucesso</p>
-                </div>
+                </div> -->
                 <!-- Caixa de Resultado 2 -->
                 <div
                     class="bg-gray-800 p-8 rounded-lg shadow-lg transform transition-transform duration-300 card-effect">
-                    <h3 class="text-5xl font-extrabold text-custom-gold mb-2" data-target="+10 Anos">+10 Anos</h3>
+                    <h3 class="text-5xl font-extrabold text-custom-gold mb-2" data-target="+5 Anos">+05 Anos</h3>
                     <p class="text-xl font-semibold mb-4 text-gray-200">de Experiência</p>
                 </div>
                 <!-- Caixa de Resultado 3 -->
@@ -219,13 +223,14 @@
     <section id="historia" class="py-20 md:py-32 bg-gray-100 text-gray-800 relative">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/2">
-                    <!-- Caixa para a imagem que representa a história do escritório -->
-                    <div class="w-[350px] h-[618px] bg-gray-300 rounded-lg shadow-xl overflow-hidden transform mx-auto">
-                        <video src="./images/videoConrado.mp4" loop muted autoplay playsinline controls
-                            class="w-full h-full object-contain"></video>
-                    </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <picture>
+                        <source srcset="images/aboutMb.png" media="(max-width: 767px)">
+                        <img src="images/aboutDt.png" alt="Sobre nós"
+                            class="w-[400px] h-[400px] md:w-[350px] md:h-[618px] bg-gray-300 rounded-lg shadow-xl overflow-hidden transform mx-auto object-cover">
+                    </picture>
                 </div>
+
                 <div class="md:w-1/2">
                     <h2 class="text-4xl font-bold mb-4 text-custom-blue">Quem sou eu?</h2>
                     <p class="text-lg text-gray-600 mb-8">
@@ -274,23 +279,63 @@
                 <div
                     class="bg-gray-800 p-6 rounded-lg shadow-lg card-effect aspect-square flex flex-col justify-center items-center w-72">
                     <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-4">
-                        <img src="./images/profile1.png" alt="Foto do Advogado" class="object-cover w-full h-full">
+                        <img src="./images/Conrado.png" alt="Foto do Advogado" class="object-cover w-full h-full">
                     </div>
                     <h3 class="text-xl font-bold text-custom-gold">Conrado Augusto Carvalho</h3>
                     <p class="text-gray-400 text-sm">OAB/MG 232.615</p>
                     <p class="text-gray-400 text-sm">Fundador</p>
+                </div>
+
+
+                <div
+                    class="bg-gray-800 p-6 rounded-lg shadow-lg card-effect aspect-square flex flex-col justify-center items-center w-72">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-4">
+                        <img src="./images/Yara.png" alt="Foto do Advogado" class="object-cover w-full h-full">
+                    </div>
+                    <h3 class="text-xl font-bold text-custom-gold">Yara Conrado Sacramento Paiva</h3>
+                    <p class="text-gray-400 text-sm">OAB/MG 243.763</p>
+                    <p class="text-gray-400 text-sm">Associada</p>
                 </div>
 
                 <div
                     class="bg-gray-800 p-6 rounded-lg shadow-lg card-effect aspect-square flex flex-col justify-center items-center w-72">
                     <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-4">
-                        <img src="./images/profile1.png" alt="Foto do Advogado" class="object-cover w-full h-full">
+                        <img src="./images/Isabella.png" alt="Foto do Advogado" class="object-cover w-full h-full">
                     </div>
-                    <h3 class="text-xl font-bold text-custom-gold">Conrado Augusto Carvalho</h3>
-                    <p class="text-gray-400 text-sm">OAB/MG 232.615</p>
-                    <p class="text-gray-400 text-sm">Fundador</p>
+                    <h3 class="text-xl font-bold text-custom-gold">Isabella da Silva Andrade</h3>
+                    <p class="text-gray-400 text-sm">OAB/MG 243.126</p>
+                    <p class="text-gray-400 text-sm">Associada</p>
                 </div>
 
+                <div
+                    class="bg-gray-800 p-6 rounded-lg shadow-lg card-effect aspect-square flex flex-col justify-center items-center w-72">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-4">
+                        <img src="./images/Ramone.png" alt="Foto do Advogado" class="object-cover w-full h-full">
+                    </div>
+                    <h3 class="text-xl font-bold text-custom-gold">Ramone Nascimento Giarola</h3>
+                    <p class="text-gray-400 text-sm">OAB/MG 214.655</p>
+                    <p class="text-gray-400 text-sm">Associada</p>
+                </div>
+
+                <div
+                    class="bg-gray-800 p-6 rounded-lg shadow-lg card-effect aspect-square flex flex-col justify-center items-center w-72">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-4">
+                        <img src="./images/André.png" alt="Foto do Advogado" class="object-cover w-full h-full">
+                    </div>
+                    <h3 class="text-xl font-bold text-custom-gold">André Luiz Medeiros da Silva</h3>
+                    <p class="text-gray-400 text-sm">OAB/MG: 243.124</p>
+                    <p class="text-gray-400 text-sm">Associado</p>
+                </div>
+
+                <div
+                    class="bg-gray-800 p-6 rounded-lg shadow-lg card-effect aspect-square flex flex-col justify-center items-center w-72">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-4">
+                        <img src="./images/Matheus.png" alt="Foto do Advogado" class="object-cover w-full h-full">
+                    </div>
+                    <h3 class="text-xl font-bold text-custom-gold">Matheus Fernandes Dias do Nascimento</h3>
+                    <p class="text-gray-400 text-sm">OAB/MG 238.232</p>
+                    <p class="text-gray-400 text-sm">Associado</p>
+                </div>
             </div>
         </div>
     </section>
@@ -298,23 +343,39 @@
     <!-- Seção de Mapa e Vídeo Explicativo -->
     <section class="py-20 md:py-32 bg-gray-100">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Onde Estamos Localizados</h2>
-            <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Onde Estamos e Como Trabalhamos</h2>
+            <div class="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-evenly gap-12">
 
-                <div class="md:w-1/2 w-full">
-                    <!-- <h3 class="text-2xl font-bold mb-4 text-gray-900">Nosso Escritório</h3> -->
+                <!-- Vídeo vertical à esquerda -->
+                <div class="w-full md:w-auto flex flex-col items-center md:items-start">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900 text-center md:text-left">Conheça nosso trabalho
+                    </h3>
+                    <div class="bg-gray-300 h-[570px] w-80 md:h-[600px] md:w-80 rounded-lg shadow-xl overflow-hidden">
+                        <video src="./images/videoConrado.mp4" loop muted autoplay playsinline controls
+                            class="w-full h-full object-cover"></video>
+                    </div>
+                </div>
 
-                    <div class="bg-gray-300 w-full h-96 rounded-lg shadow-xl overflow-hidden">
+                <!-- Mapa à direita -->
+                <div class="w-full md:w-auto flex flex-col items-center md:items-start">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900 text-center md:text-left">Nosso Escritório</h3>
+                    <div class="bg-gray-300 w-80 h-80 md:w-[550px] md:h-[600px] rounded-lg shadow-xl overflow-hidden">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.622936963056!2d-44.260186384681!3d-21.136384779825843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9bb63ece196850f%3A0xf676676a6678e9a8!2sRua%20Alfredo%20Luiz%20Ratton%2C%2047%20-%20Sala%20104%2C%20Centro%2C%20S%C3%A3o%20Jo%C3%A3o%20del%20Rei%20-%20MG%2C%2036307-332!5e0!3m2!1spt-BR!2sbr!4v1691925271234!5m2!1spt-BR!2sbr"
                             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
+
+
+
+
+
+
+
 
     <!-- Seção de Contato -->
     <section id="contato" class="py-20 md:py-32 bg-gray-900 text-white">
@@ -365,12 +426,175 @@
                 Encontre respostas para as perguntas mais comuns sobre nossos serviços de direito imobiliário.
             </p>
             <div class="max-w-3xl mx-auto text-left">
-                <!-- Item da FAQ 1 -->
+
+                <div class="faq-item bg-white p-6 rounded-lg shadow-lg mb-4 cursor-pointer transition-all duration-300"
+                    onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-custom-blue">Por que devo contratar um advogado
+                            especializado em imóveis?</h3>
+                        <svg class="w-6 h-6 text-custom-gold faq-toggle-icon transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer text-gray-600">
+                        <p class="pt-4">
+                            Porque cada imóvel tem um histórico único. Um advogado especializado garante que você evite
+                            problemas como fraudes, dívidas ocultas ou contratos mal redigidos, protegendo seu
+                            investimento do início ao fim da negociação.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white p-6 rounded-lg shadow-lg mb-4 cursor-pointer transition-all duration-300"
+                    onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-custom-blue">Qual o risco de comprar um imóvel sem
+                            verificar a matrícula?</h3>
+                        <svg class="w-6 h-6 text-custom-gold faq-toggle-icon transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer text-gray-600">
+                        <p class="pt-4">
+                            Sem a matrícula atualizada, você não tem certeza de quem é o verdadeiro dono nem se há
+                            dívidas, penhoras ou disputas judiciais. Nosso escritório realiza essa análise de forma
+                            minuciosa para sua segurança.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white p-6 rounded-lg shadow-lg mb-4 cursor-pointer transition-all duration-300"
+                    onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-custom-blue">Tenho um contrato de compra e venda. Já sou
+                            dono do imóvel?</h3>
+                        <svg class="w-6 h-6 text-custom-gold faq-toggle-icon transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer text-gray-600">
+                        <p class="pt-4">
+                            Não. A propriedade só é transferida com o registro no Cartório de Registro de Imóveis. Nós
+                            cuidamos de todo o processo para que você tenha a propriedade legalmente em seu nome.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white p-6 rounded-lg shadow-lg mb-4 cursor-pointer transition-all duration-300"
+                    onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-custom-blue">Como saber se posso entrar com usucapião?
+                        </h3>
+                        <svg class="w-6 h-6 text-custom-gold faq-toggle-icon transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer text-gray-600">
+                        <p class="pt-4">
+                            É preciso analisar há quanto tempo você exerce a posse, de que forma e se existem documentos
+                            que comprovem. Nós avaliamos seu caso para indicar o tipo de usucapião mais adequado.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white p-6 rounded-lg shadow-lg mb-4 cursor-pointer transition-all duration-300"
+                    onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-custom-blue">É possível regularizar um imóvel herdado?
+                        </h3>
+                        <svg class="w-6 h-6 text-custom-gold faq-toggle-icon transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer text-gray-600">
+                        <p class="pt-4">
+                            Sim. Realizamos o inventário (judicial ou extrajudicial) e, em seguida, a regularização da
+                            matrícula, para que o imóvel fique em nome dos herdeiros e possa ser vendido ou financiado.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white p-6 rounded-lg shadow-lg mb-4 cursor-pointer transition-all duration-300"
+                    onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-custom-blue">Posso vender um imóvel irregular?</h3>
+                        <svg class="w-6 h-6 text-custom-gold faq-toggle-icon transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer text-gray-600">
+                        <p class="pt-4">
+                            Em regra, não. Mas nosso escritório pode regularizar a documentação para que a venda seja
+                            feita com segurança e maior valorização do bem.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white p-6 rounded-lg shadow-lg mb-4 cursor-pointer transition-all duration-300"
+                    onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-custom-blue">O que fazer se o inquilino parar de pagar o
+                            aluguel?</h3>
+                        <svg class="w-6 h-6 text-custom-gold faq-toggle-icon transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer text-gray-600">
+                        <p class="pt-4">
+                            Buscamos soluções extrajudiciais rápidas para recuperar o valor e, se necessário,
+                            ingressamos com ação de despejo e cobrança, sempre visando reduzir seu prejuízo.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white p-6 rounded-lg shadow-lg mb-4 cursor-pointer transition-all duration-300"
+                    onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-custom-blue">Qual a vantagem de fazer um contrato de
+                            locação com advogado?</h3>
+                        <svg class="w-6 h-6 text-custom-gold faq-toggle-icon transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer text-gray-600">
+                        <p class="pt-4">
+                            Um contrato bem elaborado evita brechas que podem gerar prejuízos e facilita a solução de
+                            conflitos. Nós criamos contratos personalizados conforme a sua necessidade.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white p-6 rounded-lg shadow-lg mb-4 cursor-pointer transition-all duration-300"
+                    onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-custom-blue">Tenho um imóvel em área rural. Posso
+                            regularizar?</h3>
+                        <svg class="w-6 h-6 text-custom-gold faq-toggle-icon transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer text-gray-600">
+                        <p class="pt-4">
+                            Sim. Analisamos a matrícula e, se necessário, conduzimos processos como
+                            georreferenciamento, retificação e registro, regularizando o imóvel para venda,
+                            financiamento ou herança.
+                        </p>
+                    </div>
+                </div>
                 <div class="faq-item bg-white p-6 rounded-lg shadow-lg mb-4 cursor-pointer transition-all duration-300"
                     onclick="toggleFaq(this)">
                     <div class="flex justify-between items-center">
                         <h3 class="text-lg font-semibold text-custom-blue">Como posso agendar uma consulta?</h3>
-
                         <svg class="w-6 h-6 text-custom-gold faq-toggle-icon transition-transform duration-300"
                             fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
@@ -385,7 +609,6 @@
                         </p>
                     </div>
                 </div>
-                <!-- Item da FAQ 2 -->
                 <div class="faq-item bg-white p-6 rounded-lg shadow-lg mb-4 cursor-pointer transition-all duration-300"
                     onclick="toggleFaq(this)">
                     <div class="flex justify-between items-center">
@@ -405,7 +628,6 @@
                         </p>
                     </div>
                 </div>
-                <!-- Item da FAQ 3 -->
                 <div class="faq-item bg-white p-6 rounded-lg shadow-lg mb-4 cursor-pointer transition-all duration-300"
                     onclick="toggleFaq(this)">
                     <div class="flex justify-between items-center">
@@ -422,6 +644,24 @@
                             Para otimizar sua consulta, é recomendável ter em mãos documentos relacionados ao seu caso,
                             como contratos, escrituras, matrículas de imóveis ou qualquer outra documentação pertinente.
                             Nossa equipe pode orientá-lo sobre o que é necessário.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white p-6 rounded-lg shadow-lg mb-4 cursor-pointer transition-all duration-300"
+                    onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-custom-blue">Como funciona a primeira consulta?</h3>
+                        <svg class="w-6 h-6 text-custom-gold faq-toggle-icon transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer text-gray-600">
+                        <p class="pt-4">
+                            Na primeira conversa, ouvimos sua situação, analisamos documentos iniciais e já apontamos
+                            possíveis soluções. Nosso objetivo é que você saia com clareza sobre os próximos passos para
+                            resolver seu caso.
                         </p>
                     </div>
                 </div>
