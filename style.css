@@ -94,11 +94,14 @@
       transform: scale(1.05) !important;
   }
 
-  .hero-bg {
-      background-image: url('images/bg2.png');
-      background-size: cover;
-      background-position: center;
-  }
+.hero-bg {
+    background-image: 
+        linear-gradient(to left, rgba(0, 0, 0, 0.6), transparent),
+        url('images/bg2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
   .avatar-content {
       position: absolute;
@@ -119,6 +122,16 @@
 
 
   @media(max-width:600px) {
+
+      .hero-bg {
+        background-image: 
+            linear-gradient(to top, rgb(0, 0, 0), transparent),
+            url('images/bg2.png');
+        background-size: cover;
+        background-position: center bottom; /* Ajusta o foco da imagem para o bottom */
+        background-repeat: no-repeat;
+    }
+    
       .avatar-content {
 
           position: absolute;
